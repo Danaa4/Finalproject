@@ -170,7 +170,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
     border-radius: 50%;
     margin: 20px;
     position: relative;
-    margin-top: -420px;
+    margin-top: -370px;
     margin-left: 1000px;
 }
 
@@ -182,12 +182,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 23px;
-  padding: 10px;
-  width: 200px;
+  font-size: 18px;
+  padding: 6px;
+  width: 120px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 14px;
+  margin-top: -80px;
+  margin-left: -230px;
+
 }
 
 .button span {
@@ -218,3 +221,112 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
 a{
   color: white;
 }
+
+
+/* ---------slide show ---------- */
+
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+.mySlides2 {display: none;}
+.mySlides3 {display: none;}
+
+.slideImage {vertical-align: middle;}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.slideshow3-container {
+  max-width: 1000px;
+  height: 100px;
+  position: relative;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 200px;
+}
+
+/* Caption text */
+.text {
+  background-color: rgba(0, 0, 0, 0.514);
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot2 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot3 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* ---------slide show end---------- */

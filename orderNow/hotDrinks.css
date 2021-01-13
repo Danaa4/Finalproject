@@ -175,7 +175,7 @@ margin-top: -90px;
   width: 300px;
 float: left;
 height: 300px;
-background: #fff;
+background: whitesmoke;
 margin: 6px;
 position: relative;
 margin-top: 20px;
@@ -236,13 +236,13 @@ margin: 0 auto !important;
 transition: all 0.2s;
 }
 .product > div > a > p:hover {
-background: linear-gradient(
-  to right,
-  #ff6a00,
-  #ee0979
-);
-bottom: 5px;
-letter-spacing: 4px;
+  background: linear-gradient(
+    to right,
+    #918e8d,
+    #554f52
+  );
+  bottom: 5px;
+  letter-spacing: 4px;
 }
 
 .drinkImage{

@@ -175,7 +175,7 @@ h1 {
     width: 300px;
   float: left;
   height: 300px;
-  background: #fff;
+  background: whitesmoke;
   margin: 6px;
   position: relative;
   margin-top: 20px;
@@ -197,7 +197,7 @@ h1 {
   position: absolute;
   height: 300px;
   background: rgba(255, 255, 255, 0.5);
-}
+  }
 .product > img {
   margin: 0 auto;
   display: block;
@@ -226,7 +226,7 @@ h1 {
   font-size: 1rem;
   line-height: 2rem;
   background: #000;
-  color: #fff;
+  color: whitesmoke;
   position: absolute;
   width: 300px;
   bottom: 0;
@@ -238,8 +238,8 @@ h1 {
 .product > div > a > p:hover {
   background: linear-gradient(
     to right,
-    #ff6a00,
-    #ee0979
+    #918e8d,
+    #554f52
   );
   bottom: 5px;
   letter-spacing: 4px;
