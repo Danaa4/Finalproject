@@ -31,7 +31,7 @@
 
 8.transform: rotate();
 
-##my site
+
 https://origamicafe.netlify.app/
 
 <br>
