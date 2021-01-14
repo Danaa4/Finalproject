@@ -32,7 +32,7 @@
 8.transform: rotate();
 
 
-[site]:https://origamicafe.netlify.app/
+https://origamicafe.netlify.app/
 
 <br>
 <b>احننا قدها وانتوو ما قصرتوا معانا❤️ 💪</b>
