@@ -9,6 +9,7 @@ body{
   background: -webkit-linear-gradient(top,  #4c4c4c 0%,#595959 0%,#474747 1%,#474747 4%,#666666 4%,#474747 4%,#474747 4%,#1c1c1c 23%,#000000 39%,#111111 60%,#2b2b2b 76%,#2c2c2c 87%,#2c2c2c 87%,#131313 100%); 
   background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 0%,#474747 1%,#474747 4%,#666666 4%,#474747 4%,#474747 4%,#1c1c1c 23%,#000000 39%,#111111 60%,#2b2b2b 76%,#2c2c2c 87%,#2c2c2c 87%,#131313 100%); 
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); 
+  
 height:165px ;
 width: 1430px;
 display: flex;
