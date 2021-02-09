@@ -28,6 +28,8 @@
 
 4.Add to cart.
 
+5.Animated photo gallery on hover.
+
 
 
 
