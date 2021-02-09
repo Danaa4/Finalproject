@@ -1,0 +1,30 @@
+
+.search-bar {
+	position: relative;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 204px;
+    height: 38px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+    margin-left: 68rem;
+    
+}
+
+.sBarInput {
+    position: absolute;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 30px;
+    left: 172px;
+    margin: 4px 0;
+    border: 0;
+    border-radius: 14px;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+}

@@ -64,4 +64,3 @@ function showSlides3() {
     setTimeout(showSlides3, 2000); // Change image every 2 seconds
   }
 
-//   ----------------------

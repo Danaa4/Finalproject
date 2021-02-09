@@ -2,12 +2,33 @@
 <html>
 <head>
     <title>Order Now!</title>
+    <link rel="stylesheet" href="../CSS/all.css">
     <link rel="stylesheet" href="../CSS/orderNow.css">
+    <link rel="stylesheet" href="../orderNow/Drinks.css">
+    <link rel="stylesheet" href="../CSS/searchBar.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel&family=Playfair+Display+SC:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <!-- new -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script> -->
+
+<!-- new -->
+
 </head>
 <body>
+
+    
 
     <div class="topnav">
 
@@ -22,6 +43,24 @@
         <div> <img class="logo" src="../images/logo.png"/> </div>
 
      </div>
+
+     <!-- -------cart icon------ -->
+     <div class="cart-icon">
+
+        <div class="dropdown">
+          <button class="dropbtn">Cart</button>
+          <div class="dropdown-content">
+              <h4 style="text-decoration: underline;">*Your item:</h4>
+              <ul id="showcart" ></ul>
+              <br>
+              <br>
+              <h4 style="text-decoration: underline;">*Total</h4><h5 id='total'>0 KD</h5>
+              <a class="checkOutButton" href="../HTML/cart.html">check out</a>
+          </div>
+        </div>
+
+    </div>
+  <!-- -------cart icon------ -->
 
 
      <div class="topcategory">
@@ -39,7 +78,7 @@
 
     <!---------- الكروت ---------->
 
-     
+    
 
     <p class="subtitle">• Order here : </p>
 
@@ -59,12 +98,12 @@
         </div>
     
         <div class="container">
-            <a href="" ><img class="cardImage" src="../images/icebox.png"></a>
+            <a href="../orderNow/IceBox.html" ><img class="cardImage" src="../images/icebox.png"></a>
             <div class="overlay">ice box</div>
         </div>
     
         <div class="container">
-            <a href="" ><img class="cardImage" src="../images/1liter.png"></a>
+            <a href="../orderNow/1Liter.html" ><img class="cardImage" src="../images/1liter.png"></a>
             <div class="overlay">1 Liter</div>
         </div>
 
@@ -74,5 +113,282 @@
     
   </div>
 
+        <!-- -----search Bar---- -->
+
+        <!-- <div class="search-bar">
+            <input id="myInput" type="text" placeholder="Search..">
+        </div> -->
+
+        <!-- -----search Bar end---- -->
+
+        <!-- <div id="myDIV" > -->
+
+        <!-- ------all section----- -->
+
+        <section class="allItems" >
+
+            <p class="subtitle2">• All Drinks :</p>
+
+            <!-- -----------------cold----------------- -->
+    
+          <div class="list" >
+
+                
+
+                      <div class="product">
+                        <img class="drinkImage" src="../images/lattee.jpg">
+                          <div><h2 >latte</h2>
+                    <p class="descr">Double shot of espresso + milk + ice</p>
+                    <p class="price">1.5 KD</p>
+    
+                          <!-- ----counter start---- -->
+    
+                          <div class="counter">
+                              <input class="countbox" type="number" min="1" value="1" id="0">
+                          </div>
+    
+                          <!-- ----counter end---- -->
+    
+                          <a  onclick="addToCart(0)" onclick="clickCounter()"><p class="add">Add to cart</p></a></div>
+                      </div>
+    
+    
+                         <div class="product">
+                            <img class="drinkImage" src="../images/americano.JPG">
+                            <div><h2>Americano</h2>
+                            <p class="descr">Double shot of espresso + water + ice</p>
+                            <p class="price">1.5 KD</p>
+    
+                           <!-- ----counter start---- -->
+    
+                          <div class="counter">
+                            <input class="countbox" type="number" min="1" value="1" id="1">
+                        </div>
+    
+                        <!-- ----counter end---- -->
+                        
+                        <a  onclick="addToCart(1)"><p class="add">Add to cart</p></a></div>
+                    </div>
+    
+    
+                    <div class="product">
+                        <img class="drinkImage" src="../images/spOri.JPG">
+                        <div><h2>Sparkling Ori</h2>
+                  <p class="descr">Sparkling water + natural syrup + ice</p>
+                  <p class="price">1.75 KD</p>
+                        
+                            <!-- ----counter start---- -->
+    
+                          <div class="counter">
+                            <input class="countbox" type="number" min="1" value="1" id="2">
+                        </div>
+    
+                        <!-- ----counter end---- -->
+    
+                        <a onclick="addToCart(2)"><p class="add">Add to cart</p></a></div>
+                    </div>
+                      
+    
+    
+                    <div class="product">
+                        <img class="drinkImage" src="../images/lattee.jpg">
+                        <div><h2>Coconut latte</h2>
+                  <p class="descr">Double shot of espresso + milk + Coconut syrup + ice</p>
+                  <p class="price">2 KD</p>
+                        
+                            <!-- ----counter start---- -->
+    
+                          <div class="counter">
+                            <input class="countbox" type="number" min="1" value="1" id="3">
+                        </div>
+    
+                        <!-- ----counter end---- -->
+    
+                        <a href="#" onclick="addToCart(3)"><p class="add">Add to cart</p></a></div>
+                    </div>
+    
+    
+                    <div class="product">
+                        <img class="drinkImage" src="../images/lattee.jpg">
+                        <div><h2> Origami latte</h2>
+                  <p class="descr">Double shot of espresso + milk + Origami syrup + ice</p>
+                  <p class="price">2 KD</p>
+                        
+                <!-- ----counter start---- -->
+    
+                <div class="counter">
+                    <input class="countbox" type="number" min="1" value="1" id="4">
+                </div>
+    
+                <!-- ----counter end---- -->
+    
+                        <a href="#" onclick="addToCart(4)"><p class="add">Add to cart</p></a></div>
+                    </div>
+    
+    
+                    <div class="product">
+                        <img class="drinkImage" src="../images/americano.jpg">
+                        <div><h2>Cold Brew</h2>
+                  <p class="descr">24h brewed coffee + ice</p>
+                  <p class="price">2KD</p>
+                        
+                            <!-- ----counter start---- -->
+    
+                          <div class="counter">
+                              <input class="countbox" type="number" min="1" value="1" id="5">
+                          </div>
+    
+                          <!-- ----counter end---- -->
+    
+                        <a href="#" onclick="addToCart(5)"><p class="add">Add to cart</p></a></div>
+                    </div>
+
+                    <!-- -----------------cold end----------------- -->
+
+
+                    <!-- -----------------hot--------------- -->
+
+                    <div class="product">
+                        <img class="drinkImage" src="../images/hotLatte.jpg">
+                        <div><h2>latte</h2>
+                  <p class="descr">Double shot of espresso + steamed milk </b></p>
+                  <p class="price">1.5 kd<sup></sup></p>
+  
+                  <!-- ----counter start---- -->
+  
+                  <div class="counter">
+                      <input class="countbox" type="number" min="1" value="1" id="6">
+                  </div>
+  
+                  <!-- ----counter end---- -->
+  
+                  <a  onclick="addToCart(6)"><p class="add">Add to cart</p></a></div>
+                    </div>
+  
+  
+                    <div class="product">
+                        <img class="drinkImage" src="../images/hotLatte.jpg">
+                        <div><h2>flat white</h2>
+                  <p class="descr">Double shot of espresso + steamed milk </p>
+                  <p class="price">1.75 kd<sup></sup></p>
+  
+                  <!-- ----counter start---- -->
+  
+                  <div class="counter">
+                      <input class="countbox" type="number" min="1" value="1" id="7">
+                  </div>
+  
+                  <!-- ----counter end---- -->
+  
+                  <a  onclick="addToCart(7)"><p class="add">Add to cart</p></a></div>
+                    </div>
+  
+  
+                    <div class="product">
+                      <img class="drinkImage" src="../images/hotLatte.jpg">
+                      <div><h2>Coconut latte</h2>
+                <p class="descr"> Double shot of espresso + milk + Coconut syrup</p>
+                <p class="price">2KD<sup></sup></p>
+  
+                <!-- ----counter start---- -->
+  
+                <div class="counter">
+                  <input class="countbox" type="number" min="1" value="1" id="8">
+              </div>
+  
+              <!-- ----counter end---- -->
+  
+              <a  onclick="addToCart(8)"><p class="add">Add to cart</p></a></div>
+                  </div> 
+                    
+  
+  
+                     <div class="product">
+                        <img class="drinkImage" src="../images/hotLatte.jpg">
+                        <div><h2>spanish latte</h2>
+                  <p class="descr"> Double shot of espresso + milk + spanish syrup</p>
+                  <p class="price">2KD<sup></sup></p>
+  
+                  <!-- ----counter start---- -->
+  
+                  <div class="counter">
+                      <input class="countbox" type="number" min="1" value="1" id="9">
+                  </div>
+  
+                  <!-- ----counter end---- -->
+  
+                  <a  onclick="addToCart(9)"><p class="add">Add to cart</p></a></div>
+                    </div> 
+  
+  
+                    <div class="product">
+                      <img class="drinkImage" src="../images//hotLatte.jpg">
+                      <div><h2>Origami latte</h2>
+                <p class="descr"> Double shot of espresso + milk + Origami syrup</p>
+                <p class="price">2KD<sup></sup></p>
+  
+                <!-- ----counter start---- -->
+  
+                <div class="counter">
+                  <input class="countbox" type="number" min="1" value="1" id="10">
+              </div>
+  
+              <!-- ----counter end---- -->
+  
+              <a  onclick="addToCart(10)"><p class="add">Add to cart</p></a></div>
+                  </div> 
+  
+  
+                  <div class="product">
+                      <img class="drinkImage" src="../images/hotLatte.jpg">
+                      <div><h2>toffee nut latte</h2>
+                <p class="descr"> Double shot of espresso + milk + toffee nut syrup</p>
+                <p class="price">2KD<sup></sup></p>
+  
+                <!-- ----counter start---- -->
+  
+                <div class="counter">
+                  <input class="countbox" type="number" min="1" value="1" id="11">
+              </div>
+  
+              <!-- ----counter end---- -->
+  
+              <a  onclick="addToCart(11)"><p class="add">Add to cart</p></a></div>
+                  </div> 
+
+
+                  <div class="product">
+                    <img class="drinkImage" src="../images/icebox.png">
+                    <div><h2>ice box</h2>
+              <p class="descr"> 12 bottle of Your favorite drinks.</p>
+              <p class="price">15KD<sup></sup></p>
+
+
+            <a href="../orderNow/IceBox.html"  onclick="addToCart(12)"><p class="add">choose</p></a></div>
+                </div> 
+
+
+                <div class="product">
+                    <img class="drinkImage" src="../images/1liter.png">
+                    <div><h2>1 Liter bottle</h2>
+              <p class="descr"> 1 Liter bottle of Your favorite drink.</p>
+              <p class="price"> 8-10KD<sup></sup></p>
+
+
+            <a href="../orderNow/1Liter.html"  onclick="addToCart()"><p class="add">choose</p></a></div>
+                </div>
+
+                  <!-- -----------------hot end--------------- -->
+        
+            
+
+          </div>
+          
+          </section>
+
+        <!-- </div> -->
+
+          <script src="../JS/Drinks.js"></script>
+          <script src="../JS/searchBar.js"></script>
 </body>
 </html>
