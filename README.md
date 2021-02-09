@@ -17,19 +17,18 @@
 
 1.slideshow 🏙🌆🌃
 
-2.filter: blur();📸
 
-3.-webkit-transition:
+### New:
 
-4.-o-transition:
+1.shopping Cart.
 
-5.background: linear-gradient;
+2.loading page.
 
-6.-moz-box-shadow:
+3.checkout page.
 
-7.-webkit-box-shadow:
+4.Add to cart.
 
-8.transform: rotate();
+
 
 
 https://origamicafe.netlify.app/
